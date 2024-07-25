@@ -11,7 +11,7 @@ export function HeroScroll() {
           <>
             <h1 className="text-xm font-semibold text-black dark:text-white">
               Join us <br />
-              <span className="text-2xl md:text-[1rem] font-normal mt-2px leading-none">
+              <span className="text-3xl md:text-[3rem] font-mono mt-2px leading-none">
                 lets build something great together
               </span>
             </h1>
