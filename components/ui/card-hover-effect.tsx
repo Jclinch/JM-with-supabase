@@ -13,6 +13,7 @@ export const HoverEffect = ({
     link: string;
   }[];
   className?: string;
+  titleClassName?: string;
 }) => {
   let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
@@ -86,7 +87,7 @@ export const CardTitle = ({
   children: React.ReactNode;
 }) => {
   return (
-    <h4 className={cn("text-zinc-100 font-bold tracking-wide mt-4", className)}>
+    <h4 className={cn("text-zinc-100 font-extrabold text-2xl tracking-wide mt-4", className)}>
       {children}
     </h4>
   );

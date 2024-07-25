@@ -8,7 +8,7 @@ export function FlipWordsDemo() {
 
   return (
     <div className="flex flex-col md:flex-row h-[30rem] px-4 pt-5">
-      <div className="heading flex flex-col justify-center md:w-1/2">
+      <div className="heading flex flex-col justify-center md:w-1/2 mt-24">
         <div className="text-2xl font-bold text-neutral-600 dark:text-neutral-400">
           Welcome to Jclinch Multimedia
         </div>

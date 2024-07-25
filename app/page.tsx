@@ -2,6 +2,7 @@ import { Navbar } from "@/components/Navbar";
 import Image from "next/image";
 import { FlipWordsDemo } from "@/components/HeroHeader";
 import { Service } from "@/components/Service";
+import { AboutUs } from "@/components/AboutUs";
 
 export default function Home() {
   return (
@@ -12,6 +13,9 @@ export default function Home() {
     </div>
     <div className="service-section mt-52">
     <Service />
+    </div>
+    <div>
+      <AboutUs />
     </div>
     </>
   );
