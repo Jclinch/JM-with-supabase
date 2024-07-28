@@ -66,7 +66,7 @@ const Contact: FC = () => {
         </div>
       </div>
       <div className='flex justify-center'>
-        <button className='hover:bg-orange-600 rounded-md bg-purple-500 py-3 px-8 text-base font-semibold text-white outline-none'>
+        <button className='hover:bg-orange-600 rounded-md bg-slate-700 py-3 px-8 text-base font-semibold text-white outline-none'>
           Submit
         </button>
       </div>
