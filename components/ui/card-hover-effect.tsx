@@ -20,7 +20,7 @@ export const HoverEffect = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3  py-10",
+        "grid grid-row-1 md:grid-cols-2  lg:grid-cols-3  py-10 items-center justify-center md:items-start md:justify-start",
         className
       )}
     >
@@ -35,7 +35,7 @@ export const HoverEffect = ({
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-slate-800/[0.8] block  rounded-3xl"
+                className="absolute inset-0 h-full w-full bg-[#ff8906] dark:bg-slate-800/[0.8] block  rounded-3xl" //shadow
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
@@ -69,11 +69,11 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "rounded-2xl h-full w-full p-4 overflow-hidden bg-black border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20",
+        "rounded-2xl h-[160px] md:h-full w-[280px] md:w-full p-4 overflow-hidden bg-white border border-transparent dark:border-[#ff8906] group-hover:border-[#ff8906] relative ", //z-20 & border color
         className
       )}
     >
-      <div className="relative z-50">
+      <div className="relative "> {/*z-50*/}
         <div className="p-4">{children}</div>
       </div>
     </div>
@@ -87,7 +87,7 @@ export const CardTitle = ({
   children: React.ReactNode;
 }) => {
   return (
-    <h4 className={cn("text-zinc-100 font-extrabold text-2xl tracking-wide mt-4", className)}>
+    <h4 className={cn("text-[#ff8906] font-extrabold text-sm md:text-2xl tracking-wide mt-[-15px] md:mt-4", className)}>
       {children}
     </h4>
   );
@@ -102,7 +102,7 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm",
+        "mt-8 text-zinc-800 tracking-wide leading-relaxed text-sm",
         className
       )}
     >

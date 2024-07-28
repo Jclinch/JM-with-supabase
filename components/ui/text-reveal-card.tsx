@@ -268,11 +268,11 @@ export const TextRevealCard = ({
       onTouchMove={touchMoveHandler}
       ref={cardRef}
       className={cn(
-        "bg-[#1d1c20] w-full h-[1700px] text-center rounded-lg p-8 relative overflow-hidden",
+        "bg-[#0f0e17] w-full h-[1200px] text-center justify-center rounded-lg p-2 relative overflow-hidden",
         className
       )}
     >
-      <div className="h-24 relative flex flex-col items-center overflow-hidden text-center text-3xl">
+      <div className="h-24 relative flex flex-col items-center overflow-hidden text-center text-xl md:text-3xl ">
         <motion.div
           style={{
             width: "100%",
@@ -288,13 +288,13 @@ export const TextRevealCard = ({
                 }
           }
           transition={isMouseOver ? { duration: 0 } : { duration: 0.4 }}
-          className="absolute bg-[#1d1c20] z-20 will-change-transform text-center"
+          className="absolute bg-[#0f0e17] z-20 will-change-transform text-center"
         >
           <p
             style={{
               textShadow: "4px 4px 15px rgba(0,0,0,0.5)",
             }}
-            className="text-4xl sm:text-[5rem] py-10 font-bold text-white bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-500"
+            className="text-3xl sm:text-[5rem] py-10 font-bold text-white bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-500"
           >
             {revealText}
           </p>
@@ -306,7 +306,7 @@ export const TextRevealCard = ({
             opacity: widthPercentage > 0 ? 1 : 0,
           }}
           transition={isMouseOver ? { duration: 0 } : { duration: 0.4 }}
-          className="h-40 w-[8px] bg-gradient-to-b from-transparent via-neutral-800 to-transparent absolute z-50 will-change-transform"
+          className="h-40 w-[8px] bg-gradient-to-b from-transparent via-neutral-800 to-transparent absolute z-50 will-change-transform "
         ></motion.div>
 
         <div className="overflow-hidden text-center items-center [mask-image:linear-gradient(to_bottom,transparent,white,transparent)]">
@@ -332,7 +332,7 @@ export const TextRevealCardTitle = ({
   return (
     <h2
       className={twMerge(
-        "text-white items-center text-center text-lg mb-2",
+        "text-white items-center text-center text-lg mb-2 ",
         className
       )}
     >
@@ -351,7 +351,7 @@ export const TextRevealCardDescription = ({
   return (
     <p
       className={twMerge(
-        "text-[#a9a9a9] items-center text-center text-sm mt-0",
+        "text-[#ff8906] text-lg items-center w-full md:w-[600px] text-center justify-center mx-auto px-3 mt-[30px] ",
         className
       )}
     >

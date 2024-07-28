@@ -5,13 +5,13 @@ import Image from "next/image";
 
 export function HeroScroll() {
   return (
-    <div className="flex flex-col overflow-hidden">
+    <div className="flex flex-col overflow-hidden mb-[270px] px-24 h-[700px]">
       <ContainerScroll
         titleComponent={
           <>
-            <h1 className="text-xm font-semibold text-gray-400 dark:text-white">
+            <h1 className="text-xm font-semibold text-[#f25f4c] dark:text-white mt[-180px]">
               Join us <br />
-              <span className="text-xl md:text-[2rem] font-mono text-black mt-2px leading-none">
+              <span className="text-base md:text-[2rem] font-mono text-[#ff8906] leading-none">
                 lets build something great together
               </span>
             </h1>
@@ -19,11 +19,11 @@ export function HeroScroll() {
         }
       >
         <Image
-          src={`/linear.webp`}
+          src="/images/Hero.png"
           alt="hero"
           height={720}
-          width={1400}
-          className="mx-auto rounded-2xl object-cover h-full object-left-top"
+          width={720}
+          className="mx-auto rounded-2xl object-cover h-full object-left-top mr-6 bg-[#ff8906]"
           draggable={false}
         />
       </ContainerScroll>

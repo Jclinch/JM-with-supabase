@@ -1,0 +1,16 @@
+.more-button {
+    font-size: 0.8rem; /* Reduced font size */
+    padding: 0.6em 1.5em; /* Reduced padding */
+    background-color: #000;
+    border: 2px solid #ff8906; /* Reduced border width */
+    border-radius: 0.5em; /* Reduced border radius */
+    color: #fff;
+    font-weight: bolder;
+    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
+    box-shadow: -3px 3px 0px 0px #ff8906; /* Reduced box shadow size */
+  }
+  
+  .more-button:hover {
+    transform: translate(3px, -3px); /* Adjusted translate for hover effect */
+  }
+  

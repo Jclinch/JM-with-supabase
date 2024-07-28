@@ -9,6 +9,15 @@ import {
   useSpring,
 } from "framer-motion";
 
+const isValidUrl = (string: string) => {
+  try {
+    new URL(string);
+    return true;
+  } catch (_) {
+    return false;
+  }
+};
+
 export const AnimatedTooltip = ({
   items,
 }: {
@@ -73,7 +82,20 @@ export const AnimatedTooltip = ({
                 <div className="font-bold text-white relative z-30 text-base">
                   {item.name}
                 </div>
-                <div className="text-white text-xs">{item.designation}</div>
+                <div className="text-white text-xs">
+                  {isValidUrl(item.designation) ? (
+                    <a
+                      href={item.designation}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-500 hover:underline"
+                    >
+                      {item.designation}
+                    </a>
+                  ) : (
+                    item.designation
+                  )}
+                </div>
               </motion.div>
             )}
           </AnimatePresence>
