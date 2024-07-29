@@ -9,6 +9,7 @@ export const HoverEffect = ({
 }: {
   items: {
     title: string;
+    skills: string;
     description: string;
     link: string;
   }[];
@@ -51,6 +52,7 @@ export const HoverEffect = ({
           </AnimatePresence>
           <Card>
             <CardTitle>{item.title}</CardTitle>
+            <CardSkills>{item.skills}</CardSkills>
             <CardDescription>{item.description}</CardDescription>
           </Card>
         </Link>
@@ -69,7 +71,7 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "rounded-2xl h-[160px] md:h-full w-[280px] md:w-full p-4 overflow-hidden bg-white border border-transparent dark:border-[#ff8906] group-hover:border-[#ff8906] relative ", //z-20 & border color
+        "rounded-2xl h-[160px] md:h-full w-[280px] md:w-full p-4 overflow-hidden bg-[#23242A] border border-transparent dark:border-[#ff8906] group-hover:border-[#ff8906] relative ", //z-20 & border color
         className
       )}
     >
@@ -87,9 +89,22 @@ export const CardTitle = ({
   children: React.ReactNode;
 }) => {
   return (
-    <h4 className={cn("text-[#ff8906] font-extrabold text-sm md:text-2xl tracking-wide mt-[-15px] md:mt-4", className)}>
+    <h5 className={cn("text-[#fadebf] font-bold text-sm md:text-lg tracking-wide mt-[-15px] md:mt-4", className)}>
       {children}
-    </h4>
+    </h5>
+  );
+};
+export const CardSkills = ({
+  className,
+  children,
+}: {
+  className?: string;
+  children: React.ReactNode;
+}) => {
+  return (
+    <p className={cn("text-[#ff8906] font-extrabold text-base md:text-xl tracking-wide mt-[-15px] md:mt-4", className)}>
+      {children}
+    </p>
   );
 };
 export const CardDescription = ({
@@ -102,7 +117,7 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "mt-8 text-zinc-800 tracking-wide leading-relaxed text-sm",
+        "mt-8 text-white tracking-wide leading-relaxed text-sm",
         className
       )}
     >

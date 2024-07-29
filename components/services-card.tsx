@@ -1,6 +1,6 @@
 import { HoverEffect } from "./ui/card-hover-effect";
 
-export function ServicesCard() {
+export function SkillsCard() {
   return (
     <>
     <div className="w-3 md:w-full max-w-6xl mx-auto md:mx-0 px-8 text-center md:text-left">  {/* z-0 removed */}
@@ -12,20 +12,21 @@ export function ServicesCard() {
 }
 export const projects = [
   {
-    title: "Custom Software Development",
-    description: "We build softwares that fits your business needs.",
+    title: "Frontend & Backend",
+    skills: "HTML, CSS, JavaScript, PostgreSQL",
+    description: "Proficient in building responsive and accessible web interfaces using modern HTML, CSS, JavaScript and Database backend techniques.",
     link: "",
   },
   {
-    title: "Mobile App Development",
-    description:
-      "We create mobile apps that helps you connect with your customers whereever they are.",
+    title: "Frameworks",
+    skills: "React, Next.js",
+    description: "Experienced in building complex web applications using popular JavaScript frameworks and libraries like React and Next.js.",
     link: "",
   },
   {
-    title: "Web Development",
-    description:
-      "We design and develope websites that help you reach a global audience.",
+    title: "Tools",
+    skills: "Git, Tailwind CSS",
+    description: "Proficient in using various development tools and technologies to streamline the development process and create visually appealing designs.",
     link: "",
   },
 ];

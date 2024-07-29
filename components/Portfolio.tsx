@@ -33,14 +33,14 @@ export function Portfolio() {
   useOutsideClick(ref, () => setActive(null));
 
   return (
-    <>
+    <div className="bg-[#020202] min-h-screen p-4">
       <AnimatePresence>
         {active && typeof active === "object" && (
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-[#ff8906]/20 h-full w-full z-10"
+            className="fixed inset-0 bg-[#313137]/20 h-full w-full z-10"
           />
         )}
       </AnimatePresence>
@@ -62,7 +62,7 @@ export function Portfolio() {
                   duration: 0.05,
                 },
               }}
-              className="flex absolute top-2 right-2 lg:hidden items-center justify-center bg-white rounded-full h-6 w-6 "
+              className="flex absolute top-2 right-2 lg:hidden items-center justify-center bg-[#020202] rounded-full h-6 w-6 "
               onClick={() => setActive(null)}
             >
               <CloseIcon />
@@ -70,7 +70,7 @@ export function Portfolio() {
             <motion.div
               layoutId={`card-${active.title}-${id}`}
               ref={ref}
-              className="w-full max-w-[500px]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden" //popup card bg
+              className="w-full max-w-[500px]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-[#020202] dark:bg-neutral-900 sm:rounded-3xl overflow-hidden" //popup card bg
             >
               <motion.div layoutId={`image-${active.title}-${id}`}>
                 <Image
@@ -128,13 +128,13 @@ export function Portfolio() {
           </div>
         ) : null}
       </AnimatePresence>
-      <ul className="max-w-2xl mx-auto w-full gap-4 ">
+      <ul className="max-w-6xl mx-auto mt-[80px] w-full grid grid-cols-1 md:grid-cols-2 gap-4">
         {cards.map((card, index) => (
           <motion.div
             layoutId={`card-${card.title}-${id}`}
             key={`card-${card.title}-${id}`}
             onClick={() => setActive(card)}
-            className="  p-4 flex flex-col md:flex-row justify-between items-center hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
+            className="  p-4 flex flex-col md:flex-row justify-between items-center hover:bg-[#23242A] dark:hover:bg-[#23242A] rounded-xl cursor-pointer"
           >
             <div className="flex gap-4 flex-col md:flex-row  ">
               <motion.div layoutId={`image-${card.title}-${id}`}>
@@ -170,12 +170,12 @@ export function Portfolio() {
           </motion.div>
         ))}
       </ul>
-      <div className="">
+      <div className="text-center mt-8">
         <a href="#" className="btn-shine">
           View more
         </a>
       </div>
-    </>
+    </div>
   );
 }
 
@@ -189,11 +189,7 @@ export const CloseIcon = () => {
         opacity: 1,
       }}
       exit={{
-        opacity: 0,
-        transition: {
-          duration: 0.05,
-        },
-      }}
+        opacity: 0 }}
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -265,4 +261,21 @@ const cards = [
       );
     },
   },
+
+  {
+        description: "A todo app created with React.Js",
+        title: "Todo App",
+        src: "/images/todo.png",
+        ctaText: "Site",
+        ctaLink: "https://todo-list-ruby-kappa.vercel.app/",
+        content: () => {
+          return (
+            <p>
+              ToDo is a great app for keeping yourself organized and on track with
+              all the things that you have to do! It&apos;s very intuitive and easy
+              to navigate.
+            </p>
+          );
+        },
+      },
 ];

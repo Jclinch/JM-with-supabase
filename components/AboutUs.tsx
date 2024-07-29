@@ -1,6 +1,5 @@
-// components/AboutUsSection.tsx
+"use client"; 
 
-"use client"; // Ensures this is treated as a client component
 import React, { useState } from "react";
 import Image from "next/image";
 import {
@@ -18,12 +17,9 @@ export function AboutUs() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center bg-[#0f0e17] rounded-2xl w-full h-[900px] md:h-[700px]">
+    <div className="flex flex-col items-center justify-center bg-[#020202] rounded-2xl w-full h-[900px] md:h-[700px]">
       <TextRevealCard text="Why Choose Us" revealText="We know the business">
-        {/* <TextRevealCardTitle className="text-xl sm:text-2xl">
-          We are committed to delivering the best software solutions
-        </TextRevealCardTitle> */}
-
+        
         <div className=" flex items-center flex-col">
           <h1 className="text-3xl text-white font-extrabold mt-4 mb-8">
             {showImage ? "Quality Codes" : "About Us"}
@@ -92,23 +88,3 @@ export function AboutUs() {
   );
 }
 
-// "use client";
-// import React from "react";
-// import {
-//   TextRevealCard,
-//   TextRevealCardDescription,
-//   TextRevealCardTitle,
-// } from "./ui/text-reveal-card";
-
-// export function AboutUs() {
-//   return (
-//     <div className="flex items-center justify-center bg-[#0E0E10] h-[40rem] rounded-2xl w-full">
-//       <TextRevealCard text="Why Choose Us" revealText="We know the business">
-//         {/* <TextRevealCardTitle>About Us</TextRevealCardTitle> */}
-//         <TextRevealCardDescription>
-//           We are committed to delivering the best software solutions
-//         </TextRevealCardDescription>
-//       </TextRevealCard>
-//     </div>
-//   );
-// }

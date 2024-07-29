@@ -88,7 +88,7 @@ export const AnimatedTooltip = ({
                       href={item.designation}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-blue-500 hover:underline"
+                      className="text-[#ff8906] hover:font-extrabold"
                     >
                       {item.designation}
                     </a>
