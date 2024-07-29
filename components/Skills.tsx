@@ -6,9 +6,8 @@ import { SkillsCard } from "./services-card";
 
 export function Skills() {
   return (
-    <div className="relative w-full overflow-hidden bg-[#030303] flex flex-col items-center justify-center h-[650px] mt-[-150px]"> {/*z-[-10]*/}
-        <h1 className="text-4xl md:text-5xl font-extrabold text-white text-center z-50 md:z-50 mt-[80px] md:mt-0 mb-[-40px] md:mb-0" >Skills</h1>
-
+    <div className="relative w-full overflow-hidden bg-[#030303] flex flex-col items-center justify-center h-[650px] mt-[-100px] md:mt-[-150px]"> {/*z-[-10]*/}
+        <h1 className="text-4xl md:text-5xl font-extrabold text-center z-30 md:z-50 mb-[20px] md:mb-0 mt-[-0px] pt-[50px] md:pt-0 md:mt-0 text-[#f25f4c]" >Skills</h1>
       <div className="absolute inset-0 w-full h-full bg-[#030303] z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
       <Boxes />
       <div className="w-full px-4 md:px-0 md:w-auto"> {/* Wrapper to apply responsive padding */}

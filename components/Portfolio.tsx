@@ -33,7 +33,7 @@ export function Portfolio() {
   useOutsideClick(ref, () => setActive(null));
 
   return (
-    <div className="bg-[#020202] min-h-screen p-4">
+    <div className="bg-[#020202] h-[1440px] md:h-[600px] p-4">
       <AnimatePresence>
         {active && typeof active === "object" && (
           <motion.div
@@ -171,7 +171,7 @@ export function Portfolio() {
         ))}
       </ul>
       <div className="text-center mt-8">
-        <a href="#" className="btn-shine">
+        <a href="#" className="btn-shine ml-[-10px] md:ml-[50px]">
           View more
         </a>
       </div>
@@ -199,7 +199,7 @@ export const CloseIcon = () => {
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className="h-4 w-4 text-black"
+      className="h-4 w-4 text-white"
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M18 6l-12 12" />

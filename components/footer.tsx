@@ -63,8 +63,8 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <div className="h-[200px] w-full bg-neutral-950 relative flex flex-col items-center justify-center antialiased">
-      <div className="container max-w-7xl grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 text-sm mx-auto">
+    <div className="h-[300px] md:h-[130px] w-full bg-neutral-950 relative flex flex-col items-center antialiased">
+      <div className="container text-xs md:text-sm max-w-7xl grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-[2px] md:gap-8 mx-auto">
         <FooterColumn
           title="About"
           links={[

@@ -89,7 +89,7 @@ export const CardTitle = ({
   children: React.ReactNode;
 }) => {
   return (
-    <h5 className={cn("text-[#fadebf] font-bold text-sm md:text-lg tracking-wide mt-[-15px] md:mt-4", className)}>
+    <h5 className={cn("text-[#fadebf] font-bold text-xs md:text-lg tracking-wide mt-[-20px] md:mt-4", className)}>
       {children}
     </h5>
   );
@@ -102,7 +102,7 @@ export const CardSkills = ({
   children: React.ReactNode;
 }) => {
   return (
-    <p className={cn("text-[#ff8906] font-extrabold text-base md:text-xl tracking-wide mt-[-15px] md:mt-4", className)}>
+    <p className={cn("text-[#ff8906] font-extrabold text-sm md:text-xl tracking-wide mt-0 md:mt-4", className)}>
       {children}
     </p>
   );
@@ -117,7 +117,7 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "mt-8 text-white tracking-wide leading-relaxed text-sm",
+        "mt-[5px] md:mt-8 text-white tracking-wide leading-relaxed text-xs",
         className
       )}
     >

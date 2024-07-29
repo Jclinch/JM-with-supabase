@@ -1,7 +1,7 @@
 import { Navbar } from "@/components/Navbar";
 import Image from "next/image";
 import { FlipWordsDemo } from "@/components/HeroHeader";
-import { Skills } from "@/components/Service";
+import { Skills } from "@/components/Skills";
 import { AboutUs } from "@/components/AboutUs";
 import { Portfolio } from "@/components/Portfolio";
 import { OurClients } from "@/components/OurClients";
@@ -17,12 +17,11 @@ export default function Home() {
         <Navbar />
         <FlipWordsDemo />
       </div>
-      <div id="service" className="service-section mt-[100px]">
-        {/* <h1 className="text-2xl md:text-5xl font-extrabold text-black text-center">Our Services</h1> */}
+      <div id="service" className="service-section z-50 mt-[-140px] md:mt-[100px] ">
         <Skills />
       </div>
       <div id="portfolio" className=" bg-[#020202] ">
-        <h1 className="pt-[60px] mb-12 text-center font-extrabold text-3xl md:text-5xl text-[#f25f4c] bg-[#020202] ">
+        <h1 className="pt-[60px] mb-0 md:mb-0 text-center font-extrabold text-3xl md:text-5xl text-[#f25f4c] bg-[#020202] ">
           Portfolio
         </h1>
         <Portfolio />

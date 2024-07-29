@@ -133,7 +133,7 @@ import Image from "next/image";
 export const InfiniteMovingCards = ({
   items,
   direction = "left",
-  speed = "fast",
+  speed = "normal",
   pauseOnHover = true,
   className,
 }: {
@@ -229,7 +229,7 @@ export const InfiniteMovingCards = ({
                 alt={item.name}
                 width={150}
                 height={150}
-                className="rounded-full mb-4"
+                className="rounded-full mb-4 object-cover"
               />
               <span className="relative z-20 text-xl leading-[1.6]  font-extrabold">
                 {item.name}
