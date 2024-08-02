@@ -1,0 +1,83 @@
+.header {
+    background-image: url('/images/hero-bg1.jpg');
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+@keyframes zoomIn {
+    from {
+      transform: scale(0.5);
+    }
+    to {
+      transform: scale(1.05);
+    }
+  }
+  
+  .zoom-in {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .zoom-in:hover {
+    animation: zoomIn 0.3s forwards;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 1s ease-out;
+  }
+  
+  @keyframes floatInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .float-in-left {
+    animation: floatInLeft 1s ease-out;
+  }
+  
+  @keyframes slideFadeIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .slide-fade-in {
+    animation: slideFadeIn 1s ease-out forwards;
+  }
+  
+  @keyframes slowFadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .slow-fade-in {
+    animation: slowFadeIn 2s ease-in-out forwards;
+  }
+  
+
+ /* styles/homepage-effects.css */
+
+  

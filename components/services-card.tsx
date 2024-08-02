@@ -3,8 +3,8 @@ import { HoverEffect } from "./ui/card-hover-effect";
 export function SkillsCard() {
   return (
     <>
-    <div className="w-3 md:w-full max-w-6xl mx-auto md:mx-0 px-8 text-center md:text-left">  {/* z-0 removed */}
-   
+    <div className="w-3 md:w-full max-w-6xl mx-auto md:mx-0 px-8 text-center md:text-left"
+    data-aos="zoom-in">
       <HoverEffect items={projects} />
     </div>
     </>
@@ -30,3 +30,5 @@ export const projects = [
     link: "",
   },
 ];
+
+

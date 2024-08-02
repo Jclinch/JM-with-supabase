@@ -67,3 +67,29 @@
     @apply bg-background text-foreground;
   }
 }
+
+body {
+  overflow-x: hidden;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, black 80%, transparent 110%);
+  height:950px;
+  opacity: 0.92;
+  z-index: 1;
+}
+
+.header-scroll {
+  position: relative;
+  z-index: 2;
+}
+.header-content {
+  position: relative;
+  z-index: 2;
+}

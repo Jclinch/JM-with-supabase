@@ -1,0 +1,26 @@
+/* global.css or a CSS module */
+@keyframes textReveal {
+    0% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .text-reveal span {
+    display: inline-block;
+    opacity: 0;
+    animation: textReveal 0.5s forwards;
+  }
+  
+  .text-reveal span:nth-child(odd) {
+    animation-delay: 0.05s;
+  }
+  
+  .text-reveal span:nth-child(even) {
+    animation-delay: 0.1s;
+  }
+  

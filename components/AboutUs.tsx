@@ -1,4 +1,4 @@
-"use client"; 
+"use client";
 
 import React, { useState } from "react";
 import Image from "next/image";
@@ -8,6 +8,7 @@ import {
   TextRevealCardTitle,
 } from "./ui/text-reveal-card";
 import { ToggleSwitch } from "./ToggleSwitch";
+import TypedText from "../components/TypedText";
 
 export function AboutUs() {
   const [showImage, setShowImage] = useState(false);
@@ -19,7 +20,6 @@ export function AboutUs() {
   return (
     <div className="flex flex-col items-center justify-center bg-[#020202] rounded-2xl w-full h-[900px] md:h-[700px]">
       <TextRevealCard text="Why Choose Us" revealText="We know the business">
-        
         <div className=" flex items-center flex-col">
           <h1 className="text-3xl text-white font-extrabold mt-4 mb-8">
             {showImage ? "Quality Codes" : "About Us"}
@@ -63,28 +63,27 @@ export function AboutUs() {
             />
           </div>
         ) : (
-          // <div className="text-base sm:text-lg mt-[10px] mb-96 text-white">
-          <TextRevealCardDescription >
-            {/* We tailor our designs to meet your unique business needs. With a
-            team of experienced professionals, we ensure high-quality results
-            and customer satisfaction. */}
-            Our team of experienced developers and designers is passionate about
+          <div className="text-base md:text-2xl">
+          <TextRevealCardDescription>
+            {/* Our team of experienced developers and designers is passionate about
             delivering top-notch web solutions tailored to your unique needs.
-            <br /><br />
+            <br />
+            <br />
             With years of experience in the industry, we understand the
             importance of a strong online presence. We work closely with our
             clients to understand their goals and provide customized web
             development services that drive results.
-            <br /><br />
+            <br />
+            <br />
             Whether you need a new website, a redesign, or ongoing maintenance,
             we&apos;re here to help. Let&apos;s work together to create a
             website that not only looks great but also performs exceptionally
-            well.
+            well. */}
+              <TypedText />
           </TextRevealCardDescription>
-          // </div>
+            </div>
         )}
       </TextRevealCard>
     </div>
   );
 }
-
